@@ -1,7 +1,9 @@
 
+import unittest
 import cv2
 import os
 import imutils
+
 dato = os.path.dirname(__file__)
 rutaimagenes = os.path.join(dato,'img')
 
@@ -11,6 +13,7 @@ def Ingresarnombre():
 	print(" Please enter your name")
 	nombre= input()
 	return nombre
+
 
 def Crearcarpeta(personName):
 	dato = os.path.dirname(__file__)
@@ -25,12 +28,13 @@ def Crearcarpeta(personName):
 	else:
 		print(" CARPETA YA EXITE  ")
 		return personPath
+	personName.assertTrue(personPath)
 
 
+class testCrearCarpteta(unittest.TestCase):
+	def	testCrearCarpte (selft):
+		selft.assertEqual(Crearcarpeta('Inge Rosero'))
+		selft.assertEqual(Crearcarpeta('Inge Rosero'))
 if __name__ == '__main__': 
-
-    print("CASO DE PRUEBA 1:")
-    personName = "Inge Raul"
-    print("CASO DE PRUEBA 2:")
-    personName= "Inge Raul"
-    Crearcarpeta()
+	unittest.main()
+    
