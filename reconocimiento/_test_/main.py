@@ -3,7 +3,6 @@ import os
 import numpy as np
 import unittest 
 
-  
 def obtencionImagenes(datos):
  dato = os.path.dirname(datos)
  if dato is None:
@@ -17,17 +16,17 @@ def obtencionImagenes(datos):
     print("No existe ruta")
     return None
   else:
-  peopleList = os.listdir(dataPath)
+   peopleList = os.listdir(dataPath)
   print("Data correcta") 
   return dataPath
 
 
 
 class test_comrpobar_direccion(unittest.TestCase):
-  def entrada_dato_none(self)
-    selft.assertEqual(obtencionImagenes(None),None)
-    selft.assertEqual(obtencionImagenes(__file__,path.join(dato,'img'))
-    selft.assertEqual(obtencionImagenes("C://Users//SISTEMAS",path.join(dato,'img'))         
+  def entrada_dato_none(self):
+   selft.assertEqual(obtencionImagenes(None),None)
+   selft.assertEqual(obtencionImagenes(__file__),os.path.join(dato,'img'))
+   selft.assertEqual(obtencionImagenes("C://Users//SISTEMAS"),os.path.join(dato,'img'))         
     
   
 
