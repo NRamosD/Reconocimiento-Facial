@@ -48,11 +48,11 @@ def test_answer1():
     assert readImages(dataPath) == False
 
 #CP2.2.2(dataPath == Valid_Route)
-def test_answer2():
+"""def test_answer2():
     dato = os.path.dirname(__file__)
     dataPath = os.path.join(dato,'img') #Some correct route
     print(bool(dataPath))
-    assert readImages(dataPath) == True
+    assert readImages(dataPath) == True"""
 
 #CP2.2.3(dataPath==’’)
 def test_answer3():
