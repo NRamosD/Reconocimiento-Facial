@@ -1,5 +1,5 @@
 # Reconocimiento-Facial (*Software en Tiempo Real*).
-Aplicación de reconocimiento facial haciendo uso de python y OpenCV.
+Aplicación de reconocimiento facial haciendo uso de python y OpenCV..
 
 
 ### Configuración del proyecto
